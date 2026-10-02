@@ -1,0 +1,41 @@
+/* Membuang semua jarak dan mematikan scroll */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Memaksa canvas game mengambil 100% area layar */
+#unity-container {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: none !important;
+}
+
+#unity-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Sembunyikan footer, logo, dan tombol fullscreen abu-abu bawaan Unity */
+#unity-footer,
+#unity-logo-title-footer,
+#unity-fullscreen-button {
+  display: none !important;
+}
+
+/* Memastikan loading bar tetap di tengah layar */
+#unity-loading-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
